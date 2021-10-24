@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+{% for profile in profiles %}
+<div class="name">
+   <div class="date">
+      {{ post.created_date }}
+   </div>
+   <h4><a href="" style="color:rgb(0, 89, 255); text-decoration: azure;">{{ post.name }}</a></h4>
+   <p>{{ post.category|linebreaksbr }}</p>
+</div>
+{% endfor %}
+{% endblock %}
